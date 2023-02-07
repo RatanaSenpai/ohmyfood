@@ -13,3 +13,65 @@
     }
 }
 
+@mixin shadow {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin center {
+    margin: 0 auto;
+}
+
+// mixin restaurants pages
+@mixin container-menu {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@mixin container-title {
+    padding-bottom: 10px; 
+    position: relative;
+}
+
+@mixin container-h2 {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 16px 0 0 0;
+}
+
+@mixin container-title-line {
+    &:after {
+        content: '';
+        width: 40px;
+        height: 3px;
+        background: $tertiary-color-turquoise;
+        position: absolute;
+        z-index: 10;
+        left: 0px;
+        top: 40px;
+    }
+}
+
+@mixin container-heading-and-price {
+    display: flex;
+    padding: 13px 14px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@mixin button {
+    padding: 17px 50px;
+    border-radius: 40px;
+    background: linear-gradient(355deg, $primary-color-purple, $secondary-color-pink);
+    color: white;
+    @include shadow;
+    @include hoverEffects
+}
