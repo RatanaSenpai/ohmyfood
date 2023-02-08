@@ -1,0 +1,113 @@
+// Logo 
+.header {
+    &__moveback {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 20px;
+    }
+}
+
+// Picture
+.picture {
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.menu {
+    background-color: $gray;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    margin-top: -65px;
+        &__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 0 0 20px;
+            
+        }      
+        &__title {
+            font-size: 28px;
+            font-family: Shrikhand, sans-serif;
+            font-weight: 100;
+        }
+        &__heart {
+            font-size: 25px;
+            padding-right: 35px;
+        }
+}
+
+// Menu
+.list-of-dishes {
+    @include container-menu;
+        &__title { 
+            padding-bottom: 10px; 
+            position: relative;      
+            h2 {
+                font-size: 16px;
+                font-weight: 100;
+                padding: 16px 0 0 0;                  
+                &:after {
+                    content: '';
+                    width: 40px;
+                    height: 3px;
+                    background: $tertiary-color-turquoise;
+                    position: absolute;
+                    z-index: 10;
+                    left: 0px;
+                    top: 40px;
+                }                
+            }
+        }
+        &__heading-and-price {
+            display: flex;
+            padding: 13px 14px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &__menu-title {
+            font-size: 18px;
+        }
+        &__menu-subtitle {
+            font-weight: 100;
+            padding-top: 5px;
+        }
+}
+
+// Dishes 
+.list-of-dishes {
+    &__title-position {
+        position: relative;
+        padding: 10px 0 10px 35px;
+        h2 {
+            font-size: 16px;
+            font-weight: 100;
+            padding: 16px 0 0 20;
+            &:after {
+                content: '';
+                width: 40px;
+                height: 3px;
+                background: $tertiary-color-turquoise;
+                position: absolute;
+                z-index: 10;
+                left: 35px;
+                top: 35px;
+            }
+        }
+    }
+}
+
+// Button order
+.list-of-dishes__button {
+    height: 125px;
+    @include centerFlex;
+        p {
+            @include button
+        }
+
+}
