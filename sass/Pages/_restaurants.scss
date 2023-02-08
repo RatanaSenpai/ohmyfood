@@ -109,5 +109,12 @@
         p {
             @include button
         }
+}
 
+//media queries
+@media screen and (min-width: 1050px) {
+    .list-of-dishes__container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
 }
