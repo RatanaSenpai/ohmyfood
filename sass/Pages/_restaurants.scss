@@ -112,15 +112,21 @@
 }
 
 //media queries
+@media screen and (min-width: 768px) {
+    .footer {
+        &__title {
+            text-align: center;
+        }
+        &__contents {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
 @media screen and (min-width: 1050px) {
     .list-of-dishes__container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        column-gap: 10px;
     }
-}
-
-// Media queries
-@media screen and (min-width: 1050px) {
-    
 }
