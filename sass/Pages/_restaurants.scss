@@ -63,12 +63,12 @@
         }
         &__heading-and-price {
             display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
             padding: 13px 14px;
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
-            justify-content: space-between;
-            align-items: flex-end;
+                @include shadow
         }
         &__menu-title {
             font-size: 18px;
@@ -110,4 +110,9 @@
             @include button
         }
 
+}
+
+// Media queries
+@media screen and (min-width: 1050px) {
+    
 }
