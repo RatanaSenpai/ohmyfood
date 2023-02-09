@@ -16,6 +16,8 @@
         object-fit: cover;
     }
 }
+
+// Title La palette du gout
 .menu {
     background-color: $gray;
     border-radius: 40px 40px 0 0;
@@ -25,8 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 35px 0 0 20px;
-            
+            padding: 35px 0 0 20px;            
         }      
         &__title {
             font-size: 28px;
@@ -39,12 +40,14 @@
         }
 }
 
-// Menu
+// List of dishes
 .list-of-dishes {
-    @include container-menu;
-        &__title { 
-            padding-bottom: 10px; 
-            position: relative;      
+    &__container {
+        @include container-menu;
+    }
+    &__title { 
+        padding-bottom: 10px; 
+        position: relative;      
             h2 {
                 font-size: 16px;
                 font-weight: 100;
@@ -60,26 +63,26 @@
                     top: 40px;
                 }                
             }
-        }
-        &__heading-and-price {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            padding: 13px 14px;
-            background-color: white;
-            border-radius: 15px;
-                @include shadow
-        }
-        &__menu-title {
-            font-size: 18px;
-        }
-        &__menu-subtitle {
-            font-weight: 100;
-            padding-top: 5px;
-        }
+    }
+    &__heading-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 13px 14px;
+        background-color: white;
+        border-radius: 15px;
+            @include shadow
+    }
+    &__menu-title {
+        font-size: 18px;
+    }
+    &__menu-subtitle {
+        font-weight: 100;
+        padding-top: 5px;
+    }
 }
 
-// Dishes 
+// "Plats" move from La palette du gout 
 .list-of-dishes {
     &__title-position {
         position: relative;
@@ -102,7 +105,7 @@
     }
 }
 
-// Button order
+// Order button
 .list-of-dishes__button {
     height: 125px;
     @include centerFlex;
@@ -111,7 +114,9 @@
         }
 }
 
-//media queries
+// Media queries 
+
+// Tablet
 @media screen and (min-width: 768px) {
     .footer {
         &__title {
@@ -124,9 +129,13 @@
     }
 }
 
-@media screen and (min-width: 1050px) {
-    .list-of-dishes__container {
+// Desktop
+@media screen and (min-width: 1160px) {    
+    .list-of-dishes {
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        &__title-position {
+            margin-top: 6px;
+        }
     }
 }
