@@ -89,7 +89,21 @@
         padding: 13px 14px;
         background-color: white;
         border-radius: 15px;
-            @include shadow
+            @include shadow;
+        opacity: 0;
+        animation: fadeInOut 2s ease-in-out forwards;
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+                color: red;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.3s;
+                color: aqua;
+            }
+            &:nth-child(4) {
+                animation-delay: 2.4s;
+                color: greenyellow;
+            }
     }
     &__menu-title {
         font-size: 18px;
@@ -97,6 +111,24 @@
     &__menu-subtitle {
         font-weight: 100;
         padding-top: 5px;
+    }
+}
+
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
