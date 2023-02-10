@@ -263,8 +263,13 @@ a {
     font-family: Shrikhand, sans-serif;
     font-weight: 100; }
   .menu__heart {
-    font-size: 25px;
-    padding-right: 35px; }
+    position: relative;
+    font-size: 25px; }
+    .menu__heart .fa-solid {
+      position: absolute;
+      right: 20px; }
+    .menu__heart .fa-regular {
+      padding-right: 30px; }
 
 .list-of-dishes__container {
   padding: 15px;
