@@ -263,8 +263,22 @@ a {
     font-family: Shrikhand, sans-serif;
     font-weight: 100; }
   .menu__heart {
-    font-size: 25px;
-    padding-right: 35px; }
+    position: relative; }
+    .menu__heart i {
+      font-size: 24px; }
+    .menu__heart .fa-regular {
+      padding-right: 30px; }
+    .menu__heart .fa-solid {
+      position: absolute;
+      right: 30px;
+      background: linear-gradient(200deg, #9356dc, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 300ms ease-in-out;
+      opacity: 0; }
+      .menu__heart .fa-solid:hover {
+        opacity: 1; }
 
 .list-of-dishes__container {
   padding: 15px;
