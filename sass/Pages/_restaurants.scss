@@ -91,18 +91,19 @@
         border-radius: 15px;
             @include shadow;
         opacity: 0;
-        animation: fadeInOut 2s ease-in-out forwards;
+        animation: fadeInOut 1s ease-in-out forwards;
+        transform: translateY(50px);
             &:nth-child(2) {
-                animation-delay: 0.2s;
-                color: red;
+                animation-delay: 0s;
             }
             &:nth-child(3) {
-                animation-delay: 1.3s;
-                color: aqua;
+                animation-delay: 0.2s;
             }
             &:nth-child(4) {
-                animation-delay: 2.4s;
-                color: greenyellow;
+                animation-delay: 0.3s;
+            }
+            &:nth-child(5) {
+                animation-delay: 0.4s;
             }
     }
     &__menu-title {
@@ -114,21 +115,14 @@
     }
 }
 
-// @keyframes fadeIn {
-//     from {
-//         opacity: 0;
-//     }
-//     to {
-//         opacity: 1;
-//     }
-// }
-
 @keyframes fadeInOut {
     0% {
         opacity: 0;
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
