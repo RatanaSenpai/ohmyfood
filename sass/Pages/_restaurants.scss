@@ -114,8 +114,7 @@
                 overflow: hidden;  
                 text-overflow: ellipsis;  
                 white-space: nowrap;          
-            }
-            
+            }            
             &:hover .list-of-dishes__price {               
                 padding-right: 65px;
                 transition: all 0.5s ease;
@@ -130,8 +129,7 @@
     &__menu-title {
         font-size: 18px;
         overflow: hidden;
-        text-overflow: ellipsis;
-        
+        text-overflow: ellipsis;        
             p {
                 overflow: hidden;  
                 text-overflow: ellipsis;
@@ -158,18 +156,16 @@
         background-color: $tertiary-color-turquoise;
         height: 100%;
         border-radius: 0 15px 15px 0;        
-        animation: slide-in-right 0.5s forwards;   
-        
-            
+        animation: slide-in-right 0.5s ease both;                       
             i {
                 font-size: 25px;
                 margin-top: 25px;
                 color: white;
-                animation: rotate-center 0.6s ease-in-out both;
+                animation: rotate-center 0.5s ease-in-out both;
             }
     }
-
 }
+
 // Animation check
 @keyframes slide-in-right {
     0% {
@@ -238,9 +234,6 @@
 
 // Tablet
 @media screen and (min-width: 768px) {
-
-
-
     .footer {
         &__title {
             text-align: center;
@@ -269,6 +262,9 @@
         grid-template-columns: repeat(3,1fr);
         &__title-position {
             margin-top: 6px;
+        }
+        &__heading-and-price {
+            max-width: 355px;
         }
     }
 }
