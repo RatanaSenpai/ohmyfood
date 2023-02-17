@@ -1,7 +1,7 @@
-@mixin centerFlex {
+@mixin centerFlex ($align, $justify){
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: $align;
+    justify-content: $justify;
 }
 
 @mixin hoverEffects {
@@ -15,10 +15,6 @@
 
 @mixin shadow {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-@mixin border-radius($radius) {
-    border-radius: $radius;
 }
 
 @mixin center {
@@ -67,11 +63,17 @@
     align-items: flex-end;
 }
 
-@mixin button {
-    padding: 17px 50px;
+@mixin button($padding) {
+    padding: 17px $padding;
     border-radius: 40px;
     background: linear-gradient(355deg, $primary-color-purple, $secondary-color-pink);
     color: white;
     @include shadow;
     @include hoverEffects
+}
+
+@mixin text-overflow($white-space: nowrap) {
+    white-space: $white-space;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
