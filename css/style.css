@@ -260,6 +260,10 @@ a {
       justify-content: space-evenly; } }
 
 @media screen and (min-width: 768px) {
+  .picture {
+    height: 400px; }
+    .picture img {
+      min-height: 100%; }
   .footer__title {
     text-align: center; }
   .footer__contents {
@@ -270,7 +274,7 @@ a {
   .picture {
     height: 50vh; }
     .picture img {
-      height: 100%; }
+      min-height: 100%; }
   .menu {
     max-width: 1160px;
     margin: -65px auto 0 auto; }
