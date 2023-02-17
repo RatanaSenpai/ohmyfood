@@ -118,10 +118,9 @@ a {
   padding: 50px 25px 50px 25px;
   background-color: #fafafa;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
   gap: 20px; }
   .restaurants__title {
     font-size: 24px; }
@@ -193,7 +192,8 @@ a {
 
 .footer {
   background-color: #353535;
-  color: white; }
+  color: white;
+  height: 210px; }
   .footer__title {
     font-family: 'Shrikhand';
     padding: 25px; }
@@ -229,7 +229,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr; }
   .footer {
-    height: 145px; } }
+    height: 150px; } }
 
 @media screen and (min-width: 993px) {
   .functioning {
@@ -252,12 +252,35 @@ a {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto; }
   .footer {
-    height: 145px; }
+    height: 150px; }
     .footer__title {
       text-align: center; }
     .footer__contents {
       display: flex;
       justify-content: space-evenly; } }
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    text-align: center; }
+  .footer__contents {
+    display: flex;
+    justify-content: space-evenly; } }
+
+@media screen and (min-width: 1160px) {
+  .picture {
+    height: 50vh; }
+    .picture img {
+      height: 100%; }
+  .menu {
+    max-width: 1160px;
+    margin: -65px auto 0 auto; }
+  .list-of-dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .list-of-dishes__title-position {
+      margin-top: 6px; }
+    .list-of-dishes__heading-and-price {
+      max-width: 355px; } }
 
 .header__moveback {
   position: absolute;
@@ -277,8 +300,8 @@ a {
   margin-top: -65px; }
   .menu__heading {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 35px 0 0 20px; }
   .menu__title {
     font-size: 28px;
@@ -343,43 +366,36 @@ a {
   .list-of-dishes__heading-and-price:nth-child(2) {
     animation-delay: 0s; }
   .list-of-dishes__heading-and-price:nth-child(3) {
-    animation-delay: 0.2s; }
+    animation-delay: 0.1s; }
   .list-of-dishes__heading-and-price:nth-child(4) {
-    animation-delay: 0.3s; }
+    animation-delay: 0.2s; }
   .list-of-dishes__heading-and-price:nth-child(5) {
-    animation-delay: 0.4s; }
+    animation-delay: 0.3s; }
   .list-of-dishes__heading-and-price:hover .list-of-dishes__check {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    display: block; }
   .list-of-dishes__heading-and-price:hover .list-of-dishes__price {
-    padding-right: 65px;
+    padding-right: 60px;
     transition: all 0.5s ease; }
 
 .list-of-dishes__menu {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.list-of-dishes__menu-title {
-  font-size: 18px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.list-of-dishes__menu-title {
+  font-size: 18px; }
   .list-of-dishes__menu-title p {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
 
 .list-of-dishes__menu-subtitle {
   font-weight: 100;
-  padding-top: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+  padding-top: 5px; }
   .list-of-dishes__menu-subtitle p {
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    text-overflow: ellipsis; }
 
 .list-of-dishes__check {
   display: none;
@@ -429,29 +445,6 @@ a {
       opacity: 0.8;
       transition: 300ms;
       box-shadow: 0px 5px 10px 4px rgba(114, 110, 110, 0.5); }
-
-@media screen and (min-width: 768px) {
-  .footer__title {
-    text-align: center; }
-  .footer__contents {
-    display: flex;
-    justify-content: space-evenly; } }
-
-@media screen and (min-width: 1160px) {
-  .picture {
-    height: 50vh; }
-    .picture img {
-      height: 100%; }
-  .menu {
-    max-width: 1160px;
-    margin: -65px auto 0 auto; }
-  .list-of-dishes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-    .list-of-dishes__title-position {
-      margin-top: 6px; }
-    .list-of-dishes__heading-and-price {
-      max-width: 355px; } }
 
 #preloader {
   position: fixed;
