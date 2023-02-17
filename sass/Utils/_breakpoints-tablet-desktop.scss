@@ -1,0 +1,109 @@
+//1 Home page
+//1.1 Tablet
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .functioning {
+        display: flex;
+            &__title {
+                position: absolute;
+            }
+            &__bloc {
+                display: flex;
+                width: 100%;
+            }
+            &__container {
+                width: 50%;
+                padding-top: 115px;
+            }
+    }
+    .restaurants {
+        
+            &__title {
+                bottom: 20px;
+            }
+            &__bloc {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+    }
+    .footer {
+        height: 150px;
+    }       
+}
+//1.2 Desktop
+@media screen and (min-width: 993px) {
+    .functioning {
+        display: flex;
+        flex-direction: column;
+            &__title {
+                @include center;
+            }
+            &__bloc {
+                display: flex;
+                width: 990px;
+                @include center;
+            }
+            &__container {
+                width: 50%;
+                padding-top: 17px;
+            }
+    }
+    .restaurants {
+        &__title {
+            @include center;
+        }
+        &__bloc {
+            width: 940px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @include center;
+        }
+    }
+    .footer {
+        height: 150px;
+            &__title {
+                text-align: center;
+            }
+            &__contents {
+                display: flex;
+                justify-content: space-evenly;
+            }
+    }
+}
+
+//2 Restaurants
+//2.1 Tablet
+@media screen and (min-width: 768px) {
+    .footer {
+        &__title {
+            text-align: center;
+        }
+        &__contents {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+//2.2 Desktop
+@media screen and (min-width: 1160px) {         
+    .picture {
+        height: 50vh;
+        img {
+            height: 100%;
+        }
+    }
+    .menu {
+        max-width: 1160px;
+        margin: -65px auto 0 auto;
+    }
+    .list-of-dishes {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        &__title-position {
+            margin-top: 6px;
+        }
+        &__heading-and-price {
+            max-width: 355px;
+        }
+    }
+}
