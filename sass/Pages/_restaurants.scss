@@ -17,16 +17,14 @@
     }
 }
 
-// Title La palette du gout
+// Section menu
 .menu {
     background-color: $gray;
     border-radius: 40px 40px 0 0;
     position: relative;
     margin-top: -65px;
         &__heading {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include centerFlex(center, space-between);
             padding: 35px 0 0 20px;            
         }      
         &__title {
@@ -70,7 +68,8 @@
             h2 {
                 font-size: 16px;
                 font-weight: 100;
-                padding: 16px 0 0 0;                  
+                padding: 16px 0 0 0; 
+            //Underline                                 
                 &:after {
                     content: '';
                     width: 40px;
@@ -94,57 +93,37 @@
         background-color: white;
         border-radius: 15px;
             @include shadow;
+    //Fade in out animation
         opacity: 0;
         animation: fadeInOut 1s ease-in-out forwards;
         transform: translateY(50px);
-            &:nth-child(2) {
-                animation-delay: 0s;
-            }
-            &:nth-child(3) {
-                animation-delay: 0.2s;
-            }
-            &:nth-child(4) {
-                animation-delay: 0.3s;
-            }
-            &:nth-child(5) {
-                animation-delay: 0.4s;
-            }
+            @for $i from 2 through 5 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: #{($i - 2) * 0.1}s;
+                    }
+                }              
             &:hover .list-of-dishes__check {
-                display:block;  
-                overflow: hidden;  
-                text-overflow: ellipsis;  
-                white-space: nowrap;          
+                display:block;           
             }            
             &:hover .list-of-dishes__price {               
-                padding-right: 65px;
+                padding-right: 60px;
                 transition: all 0.5s ease;
             }
     }
     &__menu {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        
+        @include text-overflow
     }
     &__menu-title {
-        font-size: 18px;
-        overflow: hidden;
-        text-overflow: ellipsis;        
+        font-size: 18px;       
             p {
-                overflow: hidden;  
-                text-overflow: ellipsis;
+                @include text-overflow
             }
     }
     &__menu-subtitle {
         font-weight: 100;
         padding-top: 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
             p {
-                overflow: hidden;  
-                text-overflow: ellipsis;  
-                white-space: nowrap;
+                @include text-overflow
             }
     }
     &__check {
@@ -156,57 +135,22 @@
         background-color: $tertiary-color-turquoise;
         height: 100%;
         border-radius: 0 15px 15px 0;        
-        animation: slide-in-right 0.5s ease both;                       
+        animation: slide-in-right 0.5s ease;                       
             i {
                 font-size: 25px;
                 margin-top: 25px;
                 color: white;
-                animation: rotate-center 0.5s ease-in-out both;
+                animation: rotate-center 0.5s ease-in-out;
             }
     }
-}
-
-// Animation check
-@keyframes slide-in-right {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-// Animation rotate check
-@keyframes rotate-center {
-    0% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-// Animation menu
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-// "Plats" move from La palette du gout 
-.list-of-dishes {
+// "Plats" text moved from La palette du gout
     &__title-position {
         position: relative;
         padding: 10px 0 10px 35px;
         h2 {
             font-size: 16px;
             font-weight: 100;
-            padding: 16px 0 0 20;
+        //underline
             &:after {
                 content: '';
                 width: 40px;
@@ -219,52 +163,11 @@
             }
         }
     }
-}
-
-// Order button
-.list-of-dishes__button {
-    height: 125px;
-    @include centerFlex;
-        p {
-            @include button
-        }
-}
-
-// Media queries 
-
-// Tablet
-@media screen and (min-width: 768px) {
-    .footer {
-        &__title {
-            text-align: center;
-        }
-        &__contents {
-            display: flex;
-            justify-content: space-evenly;
-        }
-    }
-}
-
-// Desktop
-@media screen and (min-width: 1160px) {         
-    .picture {
-        height: 50vh;
-        img {
-            height: 100%;
-        }
-    }
-    .menu {
-        max-width: 1160px;
-        margin: -65px auto 0 auto;
-    }
-    .list-of-dishes {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        &__title-position {
-            margin-top: 6px;
-        }
-        &__heading-and-price {
-            max-width: 355px;
-        }
+    &__button {
+        height: 125px;
+        @include centerFlex(center, center);
+            p {
+                @include button(50px)
+            }
     }
 }
