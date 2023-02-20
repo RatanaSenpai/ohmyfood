@@ -1,5 +1,5 @@
 // 1. Animation check 
-// 1.1 Slide line 159 from _restaurants.scss
+// 1.1 Slide line 136 from _restaurants.scss
 @keyframes slide-in-right {
     0% {
         transform: translateX(100%);
@@ -8,7 +8,7 @@
         transform: translateX(0);
     }
 }
-//1.2 Animation rotate check line 164 from _restaurant.scss
+//1.2 Animation rotate check line 141 from _restaurant.scss
 @keyframes rotate-center {
     0% {
         transform: rotate(45deg);
@@ -18,7 +18,7 @@
     }
 }
 
-//2 Menu line 98 from _restaurants.scss
+//2 Menu Gradual animation line 95 from _restaurants.scss
 @keyframes fadeInOut {
     0% {
         opacity: 0;
@@ -27,5 +27,39 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+//3 Loader
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes disappear {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleY(0);
     }
 }
