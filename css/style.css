@@ -34,6 +34,32 @@ a {
     opacity: 1;
     transform: translateY(0); } }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes disappear {
+  0% {
+    transform: scaleX(1); }
+  100% {
+    transform: scaleY(0); } }
+
 .header {
   height: 60px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
@@ -349,7 +375,6 @@ a {
       height: 3px;
       background: #99E2D0;
       position: absolute;
-      z-index: 10;
       left: 0px;
       top: 40px; }
 
@@ -365,8 +390,7 @@ a {
   border-radius: 15px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   opacity: 0;
-  animation: fadeInOut 1s ease-in-out forwards;
-  transform: translateY(50px); }
+  animation: fadeInOut 1s ease-in-out forwards; }
   .list-of-dishes__heading-and-price:nth-child(2) {
     animation-delay: 0s; }
   .list-of-dishes__heading-and-price:nth-child(3) {
@@ -500,29 +524,3 @@ a {
   border-top-color: #99E2D0;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes disappear {
-  0% {
-    transform: scaleX(1); }
-  100% {
-    transform: scaleY(0); } }
