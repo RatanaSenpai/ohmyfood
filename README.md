@@ -1,4 +1,4 @@
-# ohmyfood
+# Ohmyfood
 Troisième projet à réaliser du parcours "Développeur web" de OpenClassRooms.
 
 Objectif:
