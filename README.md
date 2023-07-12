@@ -1,82 +1,33 @@
-# Ohmyfood
-Troisième projet à réaliser du parcours "Développeur web" de OpenClassRooms.
 
-Objectif:
+# Projet 3 Dynamisez une page web avec des animations CSS
 
-- Dynamiser une page web avec des animations CSS
+Il s'agit du projet 3 du parcours de la formation OpenClassRooms qui va permettre d'évaluer les compétences suivantes:
 
-Contexte: 
-
-- Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 
-
-Son objectif: 
-
-- Développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
-
-Cible: 
-
-- Classes moyennes et supérieurs, connectées et souvent pressé
-
-![Accueil](https://github.com/RatanaSenpai/ohmyfood/blob/main/maquettes/Accueil.png?raw=true)
-
-Ma mission: 
-
-●	Travailler en collaboration avec le CTO, l’UX Designer et le commercial 
-
-●	Intégrer l’interface HTML/CSS
+- Mettre en œuvre des effets CSS graphiques avancés
+- Mettre en place une structure de navigation pour un site web
+- Assurer la cohérence graphique d'un site web
+- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+- Mettre en place son environnement Front-End
 
 
-Technologies: 
+## Ohmyfood
 
-●	Le développement devra se faire en CSS, sans JavaScript. 
+![Logo](https://github.com/RatanaSenpai/ohmyfood/blob/main/screenshot.png)
 
-●	Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un plus. 
+Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
 
-●	Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+Ma mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+## Features
 
-
-Couleurs:
-
-● Primaire: #9356DCC
-
-● Secondire: #FF79DA
-
-● Tertiaire: #99E2D0
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
 
 
-Pages a intégrer selon les maquettes du site: 
+## Demo
 
-●	Page d'accueil 
-
-●	Pages de menu (x4)
+https://ratanasenpai.github.io/ohmyfood/
 
 
-Effets graphiques et animations:
+## Screenshots
 
-Boutons: 
-
-●	Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. 
-
-●	Un bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se remplir progressivement. 
-  Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
-
-Page d’accueil:
-
-●	Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Il devra apparaître pendant 1 à 3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et utiliser les animations CSS (pas de librairie).
-
-●	Le design de ce loader n’est pas défini, toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte graphique du site.
-
-Page de menu:
-
-●	À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. 
-
-●	Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. 
-
-●	Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. 
-
-●	Cela fait apparaître une petite coche à droite du plat. 
-
-●	Cette coche devra coulisser de la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic. 
-
-●	Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
+![App Screenshot](https://github.com/RatanaSenpai/ohmyfood/blob/main/mockup.png)
 
