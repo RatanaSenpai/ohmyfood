@@ -1,5 +1,5 @@
 
-# Projet 3 Dynamisez une page web avec des animations CSS
+#  ![Logo](https://github.com/thierry-laval/archives/blob/master/images/Logo_OpenClassrooms.png?raw=true) Projet 3 Dynamisez une page web avec des animations CSS
 
 Il s'agit du projet 3 du parcours de la formation OpenClassRooms qui va permettre d'évaluer les compétences suivantes:
 
