@@ -9,7 +9,7 @@ Il s'agit du projet 3 du parcours de la formation OpenClassRooms qui va permettr
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - Mettre en place son environnement Front-End
 
-## Objectif à la fin de la formation:
+## Objectif à la fin projet:
 - Apprendre SASS
 - Créer des animations CSS modernes
 - Apprendre les commandes de base de Git et Github
